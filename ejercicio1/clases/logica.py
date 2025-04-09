@@ -12,3 +12,14 @@ class MovimientoCaballo:
             8: [1, 3],
             9: [2, 4]
         }
+
+    def movimientos_validos(self, pasos):
+        dp = [[0] * 10 for _ in range(pasos + 1)]
+        for i in range(10):
+            dp[0][i] = 1
+
+        for p in range(1, pasos + 1):
+            for i in range(10):
+                dp[p][i] = sum(dp[p - 1][j] for j in self.movimientos[i])
+
+        return sum(dp[pasos])
