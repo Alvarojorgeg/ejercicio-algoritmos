@@ -2,7 +2,7 @@ https://github.com/Alvarojorgeg/ejercicio-algoritmos
 
 
 # Ejercicio Algoritmos
-
+![Diagrama de flujo](./diagram.png)
 Este repositorio contiene dos ejercicios de algoritmos implementados en Python. Cada ejercicio está organizado en su propio directorio y aborda un problema específico.
 
 ## Estructura del Proyecto
